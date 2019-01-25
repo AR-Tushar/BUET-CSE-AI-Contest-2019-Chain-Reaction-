@@ -1,6 +1,3 @@
-
-import java.io.File;
-import java.io.FileNotFoundException;
 import java.util.*;
 @SuppressWarnings("Duplicates")
 
@@ -25,21 +22,18 @@ class playerOne {
     public playerOne() {
     }
 
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main(String[] args) {
 
         String playerColor = args[0];
         char myColor = playerColor.charAt(0);
         char oppColor = (myColor == 'R') ? 'G' : 'R';
         playerOne strategy = new playerOne(myColor, oppColor);
-        File file = new File("map2.txt");
-        //Scanner scanner = new Scanner(file);
         Scanner scanner = new Scanner(System.in);
         while (!scanner.hasNextLine()) {
         }
         String command = scanner.nextLine();
         while (command.equals("start")) {
             String[][] map = new String[8][8];
-            String[][] map1 = new String[8][8];
             for (int i = 0; i < 8; i++) {
                 for (int j = 0; j < 8; j++) {
                     while (!scanner.hasNext()) {
