@@ -260,7 +260,7 @@ class playerOne {
                 else if (y == 7) factor5++;
             }
         }
-        points = factor1 * 20 + factor2 * 4 - factor3 * 8 + factor4 * 4 + factor5 * 4 + factor6 * 10 - factor7 * 25;
+        points = factor1 * 25 + factor2 * 4 - factor3 * 8 + factor4 * 4 + factor5 * 4 + factor6 * 10 - factor7 * 8;
         return points;
 
     }
