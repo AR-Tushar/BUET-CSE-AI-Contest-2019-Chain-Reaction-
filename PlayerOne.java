@@ -41,7 +41,7 @@ class playerOne {
                     map[i][j] = scanner.next();
                 }
             }
-            strategy.alphaBeta(map, 8, 5, myColor, strategy.negativeInfinity, strategy.infinity, true);
+            strategy.alphaBeta(map, 8, 7, myColor, strategy.negativeInfinity, strategy.infinity, true);
             Pair<Integer, Integer> best = strategy.bestMove;
             int x = best.getFirst();
             int y = best.getSecond();
